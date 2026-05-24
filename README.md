@@ -18,7 +18,7 @@ PostSRSd 2.x+ requires at least Postfix 2.10 for socketmap support.
 
 ### Usage
 
- `docker run --rm --name postfix-postsrsd -e  SRS_DOMAIN=domaintouse.org -e "SRS_SECRET=k/bWL9OyMBGTJ9p4Hb1owcag" ajoergensen/postfix-postsrsd`
+ `docker run --rm --name postfix-postsrsd -e  SRS_DOMAIN=domaintouse.org -e "SRS_SECRET=k/bWL9OyMBGTJ9p4Hb1owcag" george0us/docker-postsrsd:latest`
 
 ### Environment
 
