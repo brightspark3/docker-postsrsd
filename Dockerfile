@@ -1,4 +1,4 @@
-FROM docker.nowhere.dk/docker/baseimage-alpine
+FROM ghcr.io/linuxserver/baseimage-alpine:3.23
 
 RUN \
 	apk --no-cache upgrade && \
@@ -6,6 +6,6 @@ RUN \
 	rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
 
 COPY root/ /
-RUN chmod -v +x /etc/services.d/*/run /etc/cont-init.d/*
+RUN chmod -v +x /etc/services.d/*/run /etc/cont-init.d/* || true
 
 EXPOSE 10003
